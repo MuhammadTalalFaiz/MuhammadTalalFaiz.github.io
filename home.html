@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<!-- Specify a default language -->
+
+<html lang="en">
+
+<head>
+    <!-- Define the character set  -->
+    <meta charset="utf-8">
+    <!-- Set the title-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <title>Portfolio - Muhammad Talal Faiz</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <style>
+        html{
+            font-size:16px;
+        }
+        figure {
+            width: 180px;
+            display: inline-block;
+            /* float: left; */
+
+            margin: 5px;
+            border: 1px solid #ccc;
+            background-color: #E63946;
+        }
+
+        body {
+            background-color: #E63946;
+            font-family: 'Courier New', Courier, monospace;
+            color: #E63946;
+        }
+
+        figure:hover {
+            border: 1px solid #777;
+        }
+
+        img {
+            width: 50%;
+            height: auto;
+        }
+
+        figcaption {
+            text-align: center;
+            padding: 15px;
+        }
+
+        #Gallery {
+           
+            
+
+        }
+
+        #PersonalTop {
+            background-color: #A8DADC;
+            color: #F1FAEE;
+
+        }
+       
+
+        #Education {
+            background-color: #457B9D;
+            opacity: 0.9;
+            color: aliceblue;
+
+        }
+
+        .About {
+            background-color: #1D3557;
+            color:#ccc;
+        }
+
+        div.container {
+            background-color: #F1FAEE;
+        }
+        #MainNav{
+            background-color:#1D3557 ;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- 
+        Despite the addition of new
+        elements that justifably
+        captures a lot of DIV's territory,
+        you can still use them.
+     
+        The best practice is to use
+        DIVs when there is no other
+        more semantically appropiate
+        element that suits your
+        purpoe.
+    -->
+
+        <header>
+            <hgroup>
+                <h1 class="display-1">Muhammad Talal Faiz</h1>
+                <h2 class="display-1">Computer Science Student</h2>
+                <!-- +1 Component -->
+            </hgroup>
+        </header>
+
+        <nav id="MainNav" class="navbar navbar-expand-lg navbar-dark">
+            <!-- +1 Component -->
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link " href="hobies.html">Hobbies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="skills.html">Skills</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+          <br>
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" >Hidden Prize</button>
+
+          <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasTopLabel">Sike!!</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              There is no prize. Too poor to afford one. <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-emoji-frown-fill" viewBox="0 0 16 16">
+                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm-2.715 5.933a.5.5 0 0 1-.183-.683A4.498 4.498 0 0 1 8 9.5a4.5 4.5 0 0 1 3.898 2.25.5.5 0 0 1-.866.5A3.498 3.498 0 0 0 8 10.5a3.498 3.498 0 0 0-3.032 1.75.5.5 0 0 1-.683.183zM10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8z"/>
+              </svg><i class="bi bi-emoji-frown-fill"></i>
+            </div>
+          </div>
+          <br>
+        <main class="accordion" id="InfoAcc">
+            <!-- +1 Component -->
+
+            <section id="PersonalTop" class="accordion-item">
+               
+                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Gallery" aria-expanded="true" aria-controls="Gallery">
+                        <h3 class="accordion-header display-3" id="PIHead">Personal Information </h3>
+                    </button>
+               
+                
+                
+                <div id="Gallery" class="accordion-collapse collapse show" aria-labelledby="PIHead" data-bs-parent="#InfoAcc">
+                    <div class="accordion-body">
+                        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <!-- +1 Component -->
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                              <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                              <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                              <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                              <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                              <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                            </ol>
+                          
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="NUST.jpg" alt="talal_covid" class="img-polaroid">
+                                <div class="carousel-caption">
+                                  <h3>Fig1.1 - This is me in NUST-SEECS</h3>
+                                </div>
+                              </div>
+                          
+                              <div class="carousel-item">
+                                <img src="GithubPfp.png" alt="talal" class="img-polaroid">
+                                <div class="carousel-caption">
+                                  <h3>Fig1.2 - This is me, a couple of months ago</h3>
+                                </div>
+                              </div>
+                          
+                              <div class="carousel-item">
+                                <img src="talal.jpg" alt="talal" class="img-polaroid">
+                                <div class="carousel-caption">
+                                  <h3>Fig1.3 - This is me watching a show.</h3>
+                                </div>
+                              </div>
+                          
+                              <div class="carousel-item">
+                                <img src="talalbike.jpg" alt="talal" class="img-polaroid">
+                                <div class="carousel-caption">
+                                  <h3>Fig1.4 - Talal-Biker Version</h3>
+                                </div>
+                              </div>
+                          
+                              <div class="carousel-item">
+                                <img src="talalcoat.jpg" alt="talalcoat" class="img-polaroid">
+                                <div class="carousel-caption">
+                                  <h3>Fig1.5 - Talal-Coat Version</h3>
+                                </div>
+                              </div>
+                            </div>
+                          
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          </div>
+                          
+                </div>
+                
+                <br>
+                <div class="display-6">
+                    
+                            <p >Undergraduate Student, Department of Computing, NUST-SEECS</p>
+                        
+                            <p>Frodo's Archnemesis. All Hail Sauron!!</p>
+                        
+                </div>
+                <aside>
+                    <p class="lead">Frodo Baggins was a hobbit of the Third Age, the most famous of all Hobbits in the histories for
+                        his leading role in the Quest of the Ring. During this epic quest, he bore the One Ring to Mount
+                        Doom and there destroyed it, giving him renown like no other Halfling throughout Middle-earth.
+                        <a class="badge bg-info text-dark" href="https://tolkiengateway.net/wiki/Frodo_Baggins">source</a></p>
+                </aside>
+            </div>
+            </section>
+            <hr />
+            <section id="Education" class="accordion-item" >
+                <hgroup >
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#Qualification" aria-expanded="true" aria-controls="Qualification">
+                    <h3 id="PIIHead" class="display-3">Education</h3>
+                </button>
+                </hgroup>
+                <div id="Qualification" class="accordion-collapse collapse show" aria-labelledby="PIIHead" data-bs-parent="#InfoAcc">
+                <ol class="accordion-body">
+                    <li>
+                        <h3>BSCS</h3>
+                        <p>NUST,Pakistan</p>
+                    </li>
+                    <li>
+                        <h3>A-Level</h3>
+                        <p>NIS,KSA</p>
+                    </li>
+                    <li>
+                        <h3>O-Level</h3>
+                        <p>NIS,KSA</p>
+                    </li>
+                </ol>
+            </div>
+            </section>
+            <hr />
+
+            <section id="About" class="accordion-item" class="About">
+                <hgroup >
+                   <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#AboutMe" aria-expanded="true" aria-controls="AboutMe"> <h3 id="PIIIHead" class="display-3">Who am I?</h3>
+                   </button>
+                </hgroup>
+                <div id="AboutMe" class="accordion-collapse collapse show" aria-labelledby="PIIIHead" data-bs-parent="#InfoAcc">
+                <p>I live to express myself through my work.</p>
+                <p>I like coding and drawing!!</p>
+                <hgroup>
+                    <h3>My Favorite Food</h3>
+                </hgroup>
+                <p>I love traditional foods such as <b>Chicken Biryani</b> and fast foods such as <b>KFC</b> and
+                    <b>Dominos</b>. I am also a huge fan of trying out new cuisines.
+                </p>
+                </div>
+            </section>
+
+            <hr />
+
+            <article class="About">
+                <!-- Add an SVG -->
+                <!-- You can skip this part. -->
+                <svg width="200" height="200" viewBox="-100 -100 200 200">
+                    <defs>
+                        <path id="branch" d="
+        M 0 0 L 0 -90
+        M 0 -20 L 20 -34
+        M 0 -20 L -20 -34
+        M 0 -40 L 20 -54
+        M 0 -40 L -20 -54
+        M 0 -60 L 20 -74
+        M 0 -60 L -20 -74" stroke="#E5C39C" stroke-width="5" />
+                    </defs>
+
+                    <use href="#branch" />
+                    <use href="#branch" transform="rotate(60)" />
+                    <use href="#branch" transform="rotate(120)" />
+                    <use href="#branch" transform="rotate(180)" />
+                    <use href="#branch" transform="rotate(240)" />
+                    <use href="#branch" transform="rotate(300)" />
+                </svg>
+            </article>
+            <hr />
+
+            <footer class="About">What is the <time datetime="2023-02-09">date</time> today? No Idea? Me Too</footer>
+            <!-- The time tag is purely for semantic purposes only and is not shown on the front end. -->
+
+        </main>
+
+        <footer>Copyright @MuhammadTalalFaiz</footer>
+
+    </div>
+</body>
+
+</html>
